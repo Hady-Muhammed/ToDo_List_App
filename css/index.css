@@ -1,0 +1,80 @@
+/* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* End Global Rules */
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+}
+.container {
+    width: 50%;
+    margin:  10px auto;
+    display: block;
+    background-color: #e9ccad;
+    height: 95vh;
+    padding: 50px;
+    border-radius: 10px;
+    overflow: auto;
+}
+button {
+    border: none;
+    font-weight: 300;
+    font-size: 6em;
+    width: 40px;
+    height: 40px;
+    background-color: #4c90dd;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transition: .5s;
+}
+button:hover {
+    transform: scale(1.2);
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+nav .cont {
+    margin: 2em auto;
+    animation: cool 2s ease 1s 1 ;
+}
+.cont-back {
+    color: #4c8fdd;
+    font-size: 2em;
+}
+.tasks {
+    margin-top: 50px;
+}
+@media (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav .cont {
+        margin: 20px 0px 20px 10px;
+    }
+}
+
+@keyframes cool {
+    from {
+        transform:  skewX(0);
+    }
+    to {
+        transform: skewX(.5turn);
+    }
+}
