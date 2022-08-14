@@ -77,6 +77,7 @@ function createTask() {
     doneTask.style.backgroundColor = 'green';
     doneTask.style.border = '3px solid grey';
     doneTask.innerHTML = `<i class="fa-solid fa-check"></i>`;
+    TaskDiv.style.textDecoration = 'line-through';
   }
   TaskDiv.appendChild(deleteTask);
   TaskDiv.appendChild(doneTask);
@@ -172,8 +173,7 @@ function showData() {
     }
 
 
-
-
+    
     TaskDiv.appendChild(deleteTask);
     TaskDiv.appendChild(doneTask);
     tasksDiv.append(TaskDiv);
